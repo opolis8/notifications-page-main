@@ -33,7 +33,6 @@ body .container {
   background-color: var(--White);
   box-shadow: 1px 0px 25px 0px rgba(94, 103, 120, 0.1);
   border-radius: 0.5rem;
-  margin: auto 0;
 }
 body .container .header {
   display: flex;
