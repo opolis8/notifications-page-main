@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Verylightgrayishblue: hsl(210, 60%, 98%);
+  --Lightgrayishblue1: hsl(211, 68%, 94%);
+  --Lightgrayishblue2: hsl(205, 33%, 90%);
+  --Grayishblue: hsl(219, 14%, 63%);
+  --Darkgrayishblue: rgb(94, 103, 120);
+  --Verydarkblue: hsl(224, 21%, 14%);
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Verylightgrayishblue);
+}
+body .container {
+  width: 50rem;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--White);
+  box-shadow: 1px 0px 25px 0px rgba(94, 103, 120, 0.1);
+  border-radius: 0.5rem;
+  margin: auto 0;
+}
+body .container .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+body .container .header h1 {
+  font-size: 1.6rem;
+}
+body .container .header h1 span {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: var(--Blue);
+  padding: 0rem 0.8rem;
+  color: var(--Lightgrayishblue1);
+}
+body .container .header p {
+  cursor: pointer;
+  color: var(--Grayishblue);
+}
+body .container .notification .notif-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin: 1rem;
+  background-color: var(--White);
+  border-radius: 0.5rem;
+}
+body .container .notification .notif-list .profile {
+  transform: scale(0.6);
+}
+body .container .notification .notif-list .notif-content {
+  position: relative;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .container .notification .notif-list .notif-content .status {
+  position: relative;
+}
+body .container .notification .notif-list .notif-content .status .red {
+  position: absolute;
+  right: -1rem;
+  top: 1.4rem;
+  border: 1px solid red;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: red;
+}
+body .container .notification .notif-list .notif-content .status p {
+  color: var(--Darkgrayishblue);
+}
+body .container .notification .notif-list .notif-content .status p span {
+  font-weight: 800;
+  cursor: pointer;
+  color: var(--Verydarkblue);
+}
+body .container .notification .notif-list .notif-content .status p span:hover {
+  color: darkblue;
+}
+body .container .notification .notif-list .notif-content .status .message {
+  border: 1px solid var(--Lightgrayishblue2);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+body .container .notification .notif-list .notif-content .status .message:hover {
+  background-color: var(--Lightgrayishblue1);
+}
+body .container .notification .notif-list .notif-content .status .notif-time {
+  color: var(--Grayishblue);
+}
+body .container .notification .notif-list .notif-content img {
+  transform: scale(0.6);
+  margin-left: 10rem;
+}
+body .container .notification .unread {
+  background-color: var(--Verylightgrayishblue);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+  }
+  body .container {
+    width: 100%;
+    padding: 0;
+  }
+  body .container .header h1 {
+    font-size: 1.2rem;
+  }
+  body .container .header h1 span {
+    font-size: 1rem;
+  }
+  body .container .header .mark-read {
+    font-size: 1rem;
+  }
+  body .container .notification .notif-list .notif-content img {
+    margin-left: auto;
+  }
+}
+@media screen and (max-height: 900px) {
+  body {
+    height: 100%;
+  }
+}/*# sourceMappingURL=notif.css.map */

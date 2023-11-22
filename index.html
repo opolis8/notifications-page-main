@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/notif.css" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>Notifications <span class="notif-num">3</span></h1>
+        <p class="mark-read">Mark all as read</p>
+      </div>
+      <div class="notification">
+        <div class="notif-list unread" data-select-list="one" >
+          <div class="profile">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><div class="red"></div>
+            <p>
+              <span class="name">Mark Webber </span> reacted to your recent post
+              <span class="activity">My first tournament today!
+              </p></span>
+              
+            <span class="notif-time">1m ago</span></div>
+            
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="two">
+          <div class="profile">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><div class="red"></div>
+            <p><span class="name">Angela Gray</span> followed you</p>
+            <span class="notif-time">5m ago</span></div>
+            
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="three">
+          <div class="profile">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><p>
+              <span class="name">Jacob Thompson</span> has joined your group
+              <span class="activity">Chess Club</span>
+            </p>
+            <span class="notif-time">1 day ago</span></div>
+            
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="four">
+          <div class="profile">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><p>
+              <span class="name">Rizky Hasanuddin</span> sent you a private
+              message
+            </p>
+            <span class="notif-time">5 days ago</span>
+            <div class="message">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p></div>
+            
+            </div>
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="five">
+          <div class="profile">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><div class="red" style ='display : none;'></div>
+            <p>
+              <span class="name">Kimberly Smith </span> commented on your
+              picture
+            </p>
+            
+            <span class="notif-time">1 week ago</span></div>
+            <img src="./assets/images/image-chess.webp" alt="chess" />
+            
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="six">
+          <div class="profile">
+
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><div class="red"></div>
+            <p>
+              <span class="name">Nathan Peterson </span> reacted to your recent
+              post <span class="activity">5 end-game strategies to increase your win rate</span>
+            </p>
+            <span class="notif-time">2 weeks ago</span></div>
+            
+          </div>
+        </div>
+        <div class="notif-list" data-select-list="seven">
+          <div class="profile">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="" />
+          </div>
+          <div class="notif-content">
+            <div class="status"><div class="red"></div>
+            <p><span class="name">Anna Kim </span> left the group <span>Chess Club</span></p>
+            <span class="notif-time">2 weeks ago</span></div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    <script src="./assets/script/index.js"></script>
+  </body>
+</html>
